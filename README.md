@@ -1,2 +1,2 @@
 # party
-this is my party
+this is my example project to train git
