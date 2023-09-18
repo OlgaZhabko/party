@@ -14,3 +14,6 @@ def add_interest(self, interest):
 
 def add_to_party(self):
   self.date_ent = datetime.now().date()
+
+def __str__(self):
+  return f'Comrade {self.name} from {self.city}({self.country}) joined us on the {self.date_ent}'
