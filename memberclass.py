@@ -14,6 +14,11 @@ def add_interest(self, interest):
 
 def add_to_party(self):
   self.date_ent = datetime.now().date()
+  self.meetings = []
+  self.contibutions = 100
 
 def __str__(self):
-  return f'Comrade {self.name} from {self.city}({self.country}) joined us on the {self.date_ent}'
+  return f'Comrade {self.name} from {self.city}({self.country}) joined us on the {self.date_ent} and contributed all in all {self.contributions} Roubles!'
+
+def made_contribution(self, summa):
+  self.contributions += summa
